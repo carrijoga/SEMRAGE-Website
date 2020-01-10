@@ -24,7 +24,7 @@ h1 {
       position: absolute;
       top: 52%;
       left: 50%;
-
+      transform: translate(-50%, -50%);
       font-weight: lighter;
       text-align: center;
 }
@@ -45,7 +45,7 @@ h1 {
       position: absolute;
       bottom: 0%; left: 50%;
       border-radius: 10%;
-      transition: all 500ms ease;
+
 }
 
 .hover-border:hover::after {
