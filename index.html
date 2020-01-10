@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
       <link rel="stylesheet" href="styles/style.css">
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://kit.fontawesome.com/4a24172e83.js" crossorigin="anonymous"></script>
       <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -35,29 +36,29 @@
                   <div class="nav">
                         <ul class="main-menu">
                               <li class="main-menu-item">
-                                    <a href="index.html">Home</a>
+                                    <a class="main-menu-home" href="index.html">Home</a>
                               </li>
 
                               <li class="main-menu-item">
-                                    <a href="about.html">About Us</a>
+                                    <a class="main-menu-about" href="about.html">About Us</a>
                               </li>
 
                               <li class="main-menu-item">
-                                    <a href="contact.html">Contact</a>
+                                    <a class="main-menu-contact" href="contact.html">Contact</a>
                               </li>
                         </ul>
                   </div>
 
                   <div class="contact">
-                        <p class="mail"><ion-icon name="mail"></ion-icon>&nbsp;&nbsp;&nbsp;contato.semrage@gmail.com</p>
+                        <a class="mail" href="#" ><i class="fas fa-envelope"></i>&nbsp;&nbsp;contato.semrage@gmail.com
                   </div>
 
                   <div class="media">
                         <ul>
-                              <a href="#">Facebook</a>
-                              <a href="#">Instagram</a>
-                              <a href="https://discord.gg/9vsyCX8">Discord</a>
-                              <a href="https://steamcommunity.com/groups/S3MRAGE">Steam</a>
+                              <a href="#"><i class="fab fa-facebook-f">&nbsp;&nbsp;</i>Facebook
+                              <a href="#"><i class="fab fa-instagram">&nbsp;&nbsp;</i>Instagram
+                              <a href="https://discord.gg/9vsyCX8"><i class="fab fa-discord">&nbsp;&nbsp;</i>Discord
+                              <a href="https://steamcommunity.com/groups/S3MRAGE"><i class="fab fa-steam-symbol">&nbsp;&nbsp;</i>Steam
                         </ul>
                   </div>
             </div>
@@ -73,27 +74,28 @@
 });
 
 var t1 = new TimelineMax({paused: true});
-t1.to(".menu", 0.3, {
+t1.to(".menu", 0.2, {
     autoAlpha: 1
 });
 
 t1.staggerFrom(".main-menu li a:not(.submenu li a)", 1, {
+    delay: 0.2,
     opacity: 0,
-    y: 10,
+    x: 10,
     ease: Power3.easeInOut
-}, 0.1);
+}, 0.10);
 
 t1.staggerFrom(".media ul a", 1, {
-    delay: 1,
+    delay: 0.2,
     opacity: 0,
-    y: 10,
+    x: 10,
     ease: Power3.easeInOut
 }, 0.1, "-=2");
 
 t1.from(".mail", 1, {
-    delay: -1.6,
+    delay: -1.5,
     opacity: 0,
-    y: 10,
+    x: 10,
     ease: Power3.easeInOut
 });
 
@@ -103,6 +105,22 @@ $(document).on("click", ".menu-btn", function() {
 });
 $(document).on("click", ".close-menu", function() {
     t1.reversed(!t1.reversed());
+});
+
+$(document).on("click", "li a", function() { 
+      t1.reversed(!t1.reversed()); 
+});
+
+$('.main-menu-home').on('click',function() {           
+      window.location.href = "index.html";
+});
+
+$('.main-menu-about').on('click',function() {           
+      window.location.href = "about.html";
+});
+
+$('.main-menu-contact').on('click',function() {           
+      window.location.href = "contact.html";
 });
       </script>
 </body>
