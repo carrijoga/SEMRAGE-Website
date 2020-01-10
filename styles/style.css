@@ -154,6 +154,7 @@ a ion-icon {
       color: grey;
       font-weight: lighter;
       padding-right: 16px;
+      text-decoration: none;
 }
 
 .fab {
