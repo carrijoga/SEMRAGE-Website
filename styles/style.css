@@ -74,7 +74,6 @@ h1 {
       top: 0;
       width: 100%;
       height: 100vh;
-      background: #121212ec;
       opacity: 0;
 }
 
@@ -115,12 +114,6 @@ h1 {
       margin: 20px 0;
 }
 
-a ion-icon {
-      position: relative;
-      font-size: 9px;
-      opacity: 0.4;
-}
-
 .submenu {
       display: none;
 }
@@ -158,6 +151,10 @@ a ion-icon {
 }
 
 .fab {
+      color: #fff;
+}
+
+.fas {
       color: #fff;
 }
 
