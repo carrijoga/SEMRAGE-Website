@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,29 +36,34 @@
                   <div class="nav">
                         <ul class="main-menu">
                               <li class="main-menu-item">
-                                    <a class="main-menu-home" href="index.html"><i class="fas fa-home">&nbsp;&nbsp;</i>Home</a>
+                                    <a class="main-menu-home" href="index.html">Home</a>
                               </li>
 
                               <li class="main-menu-item">
-                                    <a class="main-menu-about" href="about.html"><i class="fas fa-users">&nbsp;&nbsp;</i>About Us</a>
+                                    <a class="main-menu-about" href="about.html">About</a>
                               </li>
 
                               <li class="main-menu-item">
-                                    <a class="main-menu-contact" href="contact.html"><i class="fas fa-envelope-open-text">&nbsp;&nbsp;</i>Contact</a>
+                                    <a class="main-menu-blog" href="blog.html">Blog Posts</a>
+                              </li>
+
+                              <li class="main-menu-item">
+                                    <a class="main-menu-contact" href="contact.html">Contact</a>
                               </li>
                         </ul>
                   </div>
 
                   <div class="contact">
-                        <a class="mail" href="mailto:contato.semrage@gmail.com" ><i class="fas fa-envelope"></i>&nbsp;&nbsp;contato.semrage@gmail.com
+                        
                   </div>
 
                   <div class="media">
                         <ul>
-                              <a href="#"><i class="fab fa-facebook-f">&nbsp;&nbsp;</i>Facebook</a>
-                              <a href="#"><i class="fab fa-instagram">&nbsp;&nbsp;</i>Instagram</a>
-                              <a href="https://discord.gg/9vsyCX8"><i class="fab fa-discord">&nbsp;&nbsp;</i>Discord</a>
-                              <a href="https://steamcommunity.com/groups/S3MRAGE"><i class="fab fa-steam">&nbsp;&nbsp;</i>Steam</a>
+                              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                              <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                              <a href="https://discord.gg/9vsyCX8"><i class="fab fa-discord"></i></a>
+                              <a href="https://steamcommunity.com/groups/S3MRAGE"><i class="fab fa-steam"></i></a>
+                              <a href="mailto:contato.semrage@gmail.com" ><i class="fas fa-envelope"></i></a>
                         </ul>
                   </div>
             </div>
@@ -81,21 +86,21 @@ t1.to(".menu", 0.2, {
 t1.staggerFrom(".main-menu li a:not(.submenu li a)", 1, {
     delay: 0.2,
     opacity: 0,
-    x: 10,
+    y: 10,
     ease: Power3.easeInOut
 }, 0.10);
 
 t1.staggerFrom(".media ul a", 1, {
     delay: 0.2,
     opacity: 0,
-    x: 10,
+    y: 10,
     ease: Power3.easeInOut
 }, 0.1, "-=2");
 
 t1.from(".mail", 1, {
     delay: -1.5,
     opacity: 0,
-    x: 10,
+    y: 10,
     ease: Power3.easeInOut
 });
 
@@ -117,6 +122,10 @@ $('.main-menu-home').on('click',function() {
 
 $('.main-menu-about').on('click',function() {           
       window.location.href = "about.html";
+});
+
+$('.main-menu-blog').on('click',function() {           
+      window.location.href = "blog.html";
 });
 
 $('.main-menu-contact').on('click',function() {           
