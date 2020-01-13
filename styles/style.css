@@ -60,11 +60,11 @@ h1 {
 }
 
 .menu-btn {
+      top: 0.5%;
       position: fixed;
       margin: 1em;
       font-size: 24px;
       color: #000;
-      border-color: #fff;
       border-radius: 10%;
       cursor: pointer;
 }
@@ -109,32 +109,6 @@ h1 {
       font-weight: 500;
 }
 
-.submenu-item a {
-      color: grey;
-}
-
-.submenu li {
-      margin: 20px 0;
-}
-
-.submenu {
-      display: none;
-}
-
-.contact {
-      color: #fff;
-      position: absolute;
-      bottom: 75px;
-      right: 10%;
-}
-
-.contact a {
-      text-decoration: none;
-      font-weight: lighter;
-      color: grey;
-      font-family: "Helvetica";
-}
-
 .media {
       margin-top: 40px;
       margin-left: 40.5%;
@@ -166,6 +140,10 @@ h1 {
 
 @media(max-width: 768px) {
       h1 {
+            font-size: 25px;
+      }
+
+      .hover-border {
             font-size: 20px;
       }
 
@@ -173,7 +151,14 @@ h1 {
             margin-top: 20%;
       }
 
-      .contact {
-            display: none;
+      .media {
+            margin-left: 29%;
+      }
+
+      .side-icons {
+            width: 10px;
+            height: 10px;
+            position: fixed;
+            top: 35%;
       }
 }

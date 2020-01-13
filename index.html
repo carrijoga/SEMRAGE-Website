@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>#SEMRAGE</title>
+      <title>#SEMRAGE Gaming | Home</title>
       <link rel="stylesheet" href="styles/style.css">
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
       <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
@@ -26,11 +26,10 @@
                   <div class="menu-btn">
                         <ion-icon name="menu"></ion-icon>
                   </div>
-            </div>
 
-            <div class="menu">
-                  <div class="close-menu">
-                        <ion-icon name="close"></ion-icon>
+                  <div class="menu">
+                        <div class="close-menu">
+                              <ion-icon name="close"></ion-icon>
                   </div>
 
                   <div class="nav">
@@ -51,10 +50,6 @@
                                     <a class="main-menu-contact" href="contact.html">Contact</a>
                               </li>
                         </ul>
-                  </div>
-
-                  <div class="contact">
-                        
                   </div>
 
                   <div class="media">
@@ -79,30 +74,23 @@
 });
 
 var t1 = new TimelineMax({paused: true});
-t1.to(".menu", 0.2, {
+t1.to(".menu", 0.1, {
     autoAlpha: 1
 });
 
 t1.staggerFrom(".main-menu li a:not(.submenu li a)", 1, {
     delay: 0.2,
     opacity: 0,
-    y: 10,
-    ease: Power3.easeInOut
-}, 0.10);
+    x: 50,
+    ease: Power1.easeInOut
+}, 0.1);
 
 t1.staggerFrom(".media ul a", 1, {
     delay: 0.2,
     opacity: 0,
-    y: 10,
+    y: 50,
     ease: Power3.easeInOut
 }, 0.1, "-=2");
-
-t1.from(".mail", 1, {
-    delay: -1.5,
-    opacity: 0,
-    y: 10,
-    ease: Power3.easeInOut
-});
 
 t1.reverse();
 $(document).on("click", ".menu-btn", function() {
