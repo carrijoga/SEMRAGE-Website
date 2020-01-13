@@ -140,11 +140,11 @@ h1 {
 
 @media(max-width: 768px) {
       h1 {
-            font-size: 25px;
+            font-size: 20px;
       }
 
       .hover-border {
-            font-size: 20px;
+            font-size: 17px;
       }
 
       .nav {
@@ -152,13 +152,6 @@ h1 {
       }
 
       .media {
-            margin-left: 29%;
-      }
-
-      .side-icons {
-            width: 10px;
-            height: 10px;
-            position: fixed;
-            top: 35%;
+            margin-left: 19.5%;
       }
 }
