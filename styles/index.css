@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:100');
-
 * {
       font-family: "Lato", Arial, sans-serif; 
 }
@@ -10,7 +8,8 @@ body {
       position: relative;
 }
 
-footer {display: block;
+footer {
+      display: block;
       margin-left: 1%;
 }
 
@@ -70,7 +69,7 @@ li a {
 }
 
 li:hover a {  
-      color: crimson;  
+      color: #4FD1C5;  
 }  
 
 nav {  
@@ -86,18 +85,18 @@ nav {
       width: 60px;  
       border-radius: 50%;  
       background-color: rgb(255, 255, 255);  
-      background-image: url(https://image.flaticon.com/icons/svg/545/545705.svg);  
+      background-image: url(../images/menu.png); 
       background-position: center;  
       background-repeat: no-repeat;  
       background-size: 50%;  
       cursor: pointer;  
       box-shadow: 0px 0px 17px 0px #00000017;  
       transition: 0.5s ease transform;  
-}
+     }  
 
 .icon.close {  
-      transform: translateY(-50%) rotate(360deg);  
-      background-image: url(https://image.flaticon.com/icons/svg/748/748122.svg);  
+      transform: translateY(-50%) rotate(360deg);
+      background-image: url(../images/close.png);    
 }
 
 ul {  

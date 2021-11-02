@@ -54,10 +54,3 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
-
-const icon = document.querySelector(".icon");  
-const nav = document.querySelector("nav");  
-icon.addEventListener("click", () => {  
- icon.classList.toggle("close");  
- nav.classList.toggle("show");  
-});  

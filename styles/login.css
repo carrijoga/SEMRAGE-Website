@@ -1,0 +1,232 @@
+* {
+    font-family: "Lato", Arial, sans-serif; 
+}
+
+body{
+    background: linear-gradient(-100deg, #00c9ff, #92fe9d);
+    background-size: 400% 400%;
+}
+
+.loginBox{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    min-height: 200px;
+    background: #fff;
+    border-radius: 30px ;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.5);
+}
+
+h3{
+    margin: 0;
+    padding: 0 0 20px;
+    color: #262626;
+    text-align: center;
+}
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginBox input[type="email"],
+.loginBox input[type="text"],
+.loginBox input[type="password"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #262626;
+    border-bottom: 2px solid #262626;
+    background: transparent;
+    font-size: 16px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.loginBox input[type="email"]:focus,
+.loginBox input[type="text"]:focus,
+.loginBox input[type="password"]:focus{
+    border-bottom: 2px solid #f00;
+}
+
+.inputBox{
+    position: relative;
+}
+.inputBox span{
+    position: absolute;
+    top: 10px;
+    color: #262626;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button {
+  min-width: 270px;
+  min-height: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: #313133;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+.textlogin {
+    margin-top: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.textlogin a{
+    color: #262626;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.textlogin a:hover{
+    color: #4FD1C5;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.termos{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 100px;
+    background: #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 30px 30px rgba(0,0,0,0.5);
+}
+
+.termos p{
+    text-align: center;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul {  
+    background-color: white;  
+    border-radius: 10px;  
+    list-style: none;  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    box-shadow: -7px 9px 17px 0px #00000017;  
+}  
+
+li a {  
+    display: inline-block;  
+    padding: 10px 20px;  
+    text-decoration: none;  
+    color: black;  
+}
+
+li:hover a {  
+    color: #4FD1C5;
+    ;  
+}  
+
+nav {  
+    position: relative;  
+}
+
+.icon {  
+    position: absolute;  
+    top: 50%;  
+    transform: translateY(-50%);  
+    right: -80px;  
+    height: 60px;  
+    width: 60px;  
+    border-radius: 50%;  
+    background-color: rgb(255, 255, 255);  
+    background-image: url(../images/menu.png); 
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-size: 50%;  
+    cursor: pointer;  
+    box-shadow: 0px 0px 17px 0px #00000017;  
+    transition: 0.5s ease transform;  
+   }  
+
+.icon.close {  
+    transform: translateY(-50%) rotate(360deg);
+    background-image: url(../images/close.png);    
+}
+
+ul {  
+    width: 0px;  
+    overflow: hidden;  
+    transform: translateX(50px);  
+    opacity: 0;  
+    pointer-events: none;  
+    transition: 0.5s ease;  
+    padding: 20px;  
+}
+
+nav.show ul {  
+    width: 350px;  
+    transform: translate(0px);  
+    opacity: 1;  
+    pointer-events: all;  
+} 
+
+nav {  
+    position: absolute;  
+    top: 10px;  
+    right: 100px;  
+}
