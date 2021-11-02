@@ -1,0 +1,6 @@
+body {
+    color: #ffff;
+    background-repeat: no-repeat;
+    position: fixed;
+    background-image: url("../images/background.jpg");
+}
