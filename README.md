@@ -3,12 +3,16 @@
 </h1>
 
 <p align="center">
-  <img alt="GitHub language count" src="https://img.shields.io/github/watchers/DeeperAuto2335/SEMRAGE-Website?label=Watch">
+  <img alt="GitHub language count" src="https://img.shields.io/github/watchers/carrijo-ga/SEMRAGE-Website?label=Watch">
 
   <a href="https://github.com/DeeperAuto2335/SEMRAGE-Website/commits/master">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/DeeperAuto2335/SEMRAGE-Website">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/carrijo-ga/SEMRAGE-Website">
   </a>
-  
+	
+  <a href="">
+    <img alt="Netlify Status" src="https://img.shields.io/netlify/20431886-615e-4831-96f6-4db59954a40a?style=plastic">
+  </a>
+	
   <a href="https://discord.gg/9vsyCX8">
     <img alt="Feito por DeeperAuto2335" src="https://img.shields.io/static/v1?label=Discord&message=Junte-se&color=greenstyle=for-the-badge&logo=discord"/>
   </a>
