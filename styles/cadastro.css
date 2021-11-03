@@ -31,7 +31,7 @@ main.container {
     box-shadow: 0 30px 30px rgba(0,0,0,0.5);
 }
 
-main h2 {
+main h2{
     font-weight: 600;
     margin-bottom: 2rem;
     position: relative;
@@ -42,7 +42,7 @@ main h2::before {
     content: '';
     position: absolute;
     height: 4px;
-    width: 30px;
+    width: 52%;
     bottom: -1px;
     left: 0;
     border-radius: 8px;
